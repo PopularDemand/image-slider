@@ -4,6 +4,14 @@ sliderNext = 2;
 $(document).ready(function(){
   $('#slider > img#1').fadeIn(300);
   startSlider();
+  $('#slider > img').hover(
+    function() {
+        stopLoop();
+    },
+    function() {
+        startSlider();
+    }
+  )
 });
 
 function startSlider(){
@@ -54,11 +62,3 @@ function showSlide(id) {
   sliderNext = id + 1;
   startSlider();
 };
-
-$('#slider > img').hover(
-   function(){
-      stopLoop();
-   }, function(){
-      startSlider();
-   }
-);
