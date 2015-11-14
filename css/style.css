@@ -1,0 +1,34 @@
+#slider {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  margin: 30px auto;
+}
+
+#slider > img {
+  width: 600px;
+  height: 400px;
+  float: left;
+  display: none;
+}
+
+a {
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #666;
+}
+
+a.left {
+  float: left;
+}
+
+a.right{
+  float: right;
+}
+
+#wrapper {
+  width: 600px;
+  margin: auto;
+}
